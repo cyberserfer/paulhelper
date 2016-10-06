@@ -1,5 +1,9 @@
-# Learning
-Just a helping hand for a good friend.
+# D&D 5E Character Creator
 
-This is a simple git that will share experience between Cary Wolff & Paul Buss.
-It is to aid each other and to push each other to new levels of development.
+A simple way to build out a character for 5th edition Dungeon & Dragons.
+
+**Things we plan on using:**
+- Pug      | templating language
+- Mongodb  | NoSQL database
+- Express  |  Node.js Framework
+- Mongoose | Middleware for Mongodb
