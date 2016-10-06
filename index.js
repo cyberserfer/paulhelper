@@ -18,13 +18,20 @@ var express = require('express');
 // then we assign the express() function to our app variable.
 var app = express();
 
+// this sets the view engine which is pug(https://pugjs.org/api/getting-started.html)
+// it's a javescript compiler for HTML | it's way faster once you get the hang of it.
+app.set('view engine', 'pug');
+
 // Routing(https://expressjs.com/en/starter/basic-routing.html)
 // we are building out the basic routing here.
 // when someone goes to localhost:3000
-// this is going to grab the following function and res(respond) and send the string 'Hello Paul'
 // there is much more to this, but this is the basic beginning of our server.
 app.get('/', function (req, res) {
-  res.send('Hello Paul!');
+  // here we are rendering the index.pug file and then passing down some info ie. title and message.
+  res.render('index', {
+    title: 'D&D 5E Character Creator',
+    message: 'Hiya Paul!'
+  });
 });
 
 // as you can see here we use the .listen() function and pass it a port of 3000 as well as give it a function
