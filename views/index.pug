@@ -4,7 +4,20 @@ html
     style
       include ./css/styles.css
   body
-    h1= message
-    hr
-    p this is where we can add our content.
-    p it's just a starter area, we can do what we want with it.
+    .container
+      h1(class='text-center')= message
+      hr
+      p this is where we can add our content.
+      p it's just a starter area, we can do what we want with it.
+      .row
+        input(class='col-6', type='text', placeholder='Character Name')
+        input(class='col-6', type='text', placeholder='Character Class')
+    .container
+      hr
+      .row
+        input(class='col-2', type='text', placeholder='STR')
+        input(class='col-2', type='text', placeholder='DEX')
+        input(class='col-2', type='text', placeholder='CON')
+        input(class='col-2', type='text', placeholder='WIS')
+        input(class='col-2', type='text', placeholder='INT')
+        input(class='col-2', type='text', placeholder='CHA')
