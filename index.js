@@ -29,8 +29,8 @@ app.set('view engine', 'pug');
 app.get('/', function (req, res) {
   // here we are rendering the index.pug file and then passing down some info ie. title and message.
   res.render('index', {
-    title: 'D&D 5E Character Creator',
-    message: 'Hiya Paul!'
+    title: 'D&D5ECC',
+    message: 'D&D 5E Character Creator'
   });
 });
 
